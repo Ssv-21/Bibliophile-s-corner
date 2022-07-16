@@ -1,0 +1,104 @@
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #007580;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #99a8b2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+#img {
+  margin-left: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#subbtn
+{
+  font-size: 22px;
+  background-color: rgb(238, 62, 50);
+  text-align: center;
+  letter-spacing: 0.9px;
+  font-family: "Times New Roman";
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: rgb(0, 255, 191);
+}
+
+#subbtn:hover
+{
+  background-color: rgba(238, 62, 50, 0.822);
+  cursor: pointer;
+}
+
+
+#done
+{
+  font-size: 23px;
+  letter-spacing: 0.9px;
+  font-family: "Times New Roman";
+  background-color: rgb(57, 182, 255);
+  color: rgb(22, 70, 8);
+  position: fixed;
+  right: 25px;
+  padding: 1px 10px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+#tick
+{
+  font-size: 28px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

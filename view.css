@@ -1,0 +1,7 @@
+#right {
+  height: 913px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}

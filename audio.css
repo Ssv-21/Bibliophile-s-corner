@@ -1,0 +1,110 @@
+body {
+  background-color: rgb(129, 162, 255);
+  background-position: top;
+  /* background-size: 85% 90%; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../pics/audiobgfinal.jpg");
+}
+
+#right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#audiopics {
+  background-color: azure;
+  height: 500px;
+  margin-top: 150px;
+  background-image: url("");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#audiobox {
+  height: 500px;
+  width: 500px;
+  background-color: #f0f8ff;
+  border-radius: 0px 10px 10px 0px;
+  margin-top: 150px;
+  background-image: url("../pics/audiosmallblk.jpeg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+  animation: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+
+@keyframes stretch {
+  from {
+    transform: scale(0.3);
+    border-radius: 30px;
+  }
+  to {
+    transform: scale(1.02);
+    border-radius: 0px;
+  }
+}
+
+#names {
+  margin: 0px 50px;
+  padding-top: 35px;
+  border-radius: 10px;
+}
+
+#title {
+  font-size: 75px;
+  text-align: center;
+  letter-spacing: 0.9px;
+  font-family: "Times New Roman";
+  margin-bottom: 0;
+  color: rgba(56, 0, 56, 0.911);
+}
+
+#auth {
+  color: rgb(100, 0, 109);
+  margin-top: 8px;
+  font-size: 35px;
+  text-align: center;
+  letter-spacing: 0.9px;
+  font-family: "Times New Roman";
+}
+
+#audio {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+audio {
+  margin-top: 70px;
+  width: 450px;
+  margin-left: 25px;
+}
+
+audio:hover {
+  transform: scale(1.015);
+  filter: drop-shadow(2px 3px 3px #333);
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: rgb(48, 190, 255, 0.5);
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  transform: scale(1.4);
+}

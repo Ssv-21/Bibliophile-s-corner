@@ -1,0 +1,308 @@
+body {
+  background-color: #a2d0c1;
+  /* background-image: url("../pics/image.jpg"); */
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+}
+
+#right {
+  /* height: 770px; */
+  /* overflow: scroll; */
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+
+/*========== slider layout ==========*/
+#slider {
+  position: fixed;
+  background-color: #99b09f;
+  opacity: 1;
+  height: 650px;
+}
+
+* {
+  box-sizing: border-box;
+}
+img {
+  height: 550px;
+
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 550px;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -15px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 35px 35px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 35px 0 0 35px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #6155a6;
+}
+
+/* Caption text */
+#divcen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 45px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 350px;
+  width: 700px;
+  text-align: center;
+  height: 100px;
+  border-radius: 10px;
+  font-family: arial;
+}
+
+.text1 {
+  color: #f2f2f2;
+  padding: 4px;
+  font-size: 24px;
+  position: absolute;
+  bottom: 80px;
+  width: 280px;
+  text-align: center;
+  font-family: arial;
+  background-color: red;
+}
+
+.text1:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: scale(0.3);
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(1);
+
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+/*========== slider layout ends==========*/
+
+/*========== recomendation layout ==========*/
+h2 {
+  font-style: italic;
+  color: #14274e;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0.9px;
+  font-family: "Times New Roman";
+}
+.recom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-column-align: center;
+  background-color: rgba(255, 235, 205, 0.253);
+  margin: auto 90px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+}
+
+#recomblks {
+  height: 470px;
+  width: 300px;
+  margin: 20px auto;
+  background-color: #495464;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+
+.audio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-column-align: center;
+  background-color: rgba(255, 235, 205, 0.253);
+  margin-left: 110px;
+  margin-right: 110px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+#audblks {
+  height: 540px;
+  width: 350px;
+  margin: 15px;
+  background-color: #495464;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  animation: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+/*========== recomendation layout ends==========*/
+/*========== card styling==========*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 470px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+#recomblks:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+#audblks:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+@keyframes stretch {
+  from {
+    transform: scale(0.3);
+    border-radius: 30px;
+  }
+  to {
+    transform: scale(1.02);
+    border-radius: 0px;
+  }
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  position: inherit;
+  float: bottom;
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: black;
+  background-color: rgb(250, 235, 215);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 28px;
+  letter-spacing: 0.9px;
+  font-family: "Times New Roman";
+}
+
+.card button:hover {
+  background-color: rgb(248, 217, 175);
+}
+
+#imgs {
+  max-height: 250px;
+}
+/*========== card styling ends==========*/
+/*========== card styling ==========*/
+
+#para {
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  font-family: "Times New Roman";
+}
+#img {
+  max-height: 300px;
+}
+/*========== card styling ends==========*/

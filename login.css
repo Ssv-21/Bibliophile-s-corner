@@ -1,0 +1,131 @@
+/* body {
+  font-family: Arial, Helvetica, sans-serif;
+} */
+body {
+  background-color: #bdc7c9;
+  background-image: url("../pics/loginbackfinal.jpg");
+  background-position: center;
+  background-size: 85% 90%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-gap: 20px;
+}
+
+#grid2 {
+    background-color: rgba(26, 44, 38, 0.301);
+
+  max-height: 500px;
+  animation: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+}
+
+#grid1 {
+  animation: stretch;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  background-color: rgb(10, 15, 29);
+  background-image: url("../pics/avatar.jpeg");
+  /* background-position: ; */
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+}
+
+@keyframes stretch {
+  from {
+    transform: scale(0.3);
+    border-radius: 30px;
+  }
+  to {
+    transform: scale(1.02);
+    border-radius: 0px;
+  }
+}
+
+#head {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 45px;
+  color: #11698e;
+  
+}
+
+#loginmain {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 60%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(17, 142, 146);
+  box-sizing: border-box;
+}
+
+label {
+  color: rgb(16, 119, 114);
+}
+
+button {
+  background-color: #054d53;
+  color: white;
+  padding: 12px 2px;
+  margin: 20px 0;
+  border: none;
+  cursor: pointer;
+  width: 470px;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 5px 15px;
+  background-color: #f44336;
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 0;
+}
+
+img.avatar {
+  width: 310px;
+  height: 330px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 0px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
